@@ -12,12 +12,15 @@ jobs:
   build_latex:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: compile resume in latex
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Compile
         uses: xu-cheng/latex-action@v2
         with:
           root_file: main.tex
-      - name: release
+
+      - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
