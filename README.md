@@ -1,7 +1,7 @@
 # mohammadne.pdf
 
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/mohammadne/mohammadne.pdf/latex?label=latex&logo=github&style=flat-square)
-![me](https://img.shields.io/badge/me-mohammad-orange.svg?style=flat-square)
+![me](https://img.shields.io/badge/me-mohammad-blue.svg?style=flat-square)
 
 ## Introduction
 
