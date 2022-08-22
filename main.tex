@@ -1,0 +1,64 @@
+% based on moderncv
+% https://www.ctan.org/pkg/moderncv
+\documentclass[11pt, a4paper, color, final]{moderncv}
+
+\moderncvtheme[orange]{classic}
+
+% adjust the page geometry
+\usepackage[scale=0.85]{geometry}
+\recomputelengths{}
+
+% personal data
+\firstname{Mohammad}
+\lastname{Nasr}
+\title{Software Engineer}
+\phone[mobile]{+98 922 45 05 364}
+\email{mohammadne.work@gmail.com}
+\photo[96pt]{profile}
+\born{19 January 2000}
+\quote{Let's pushing the limits}
+
+\social[github]{mohammadne}
+\social[linkedin]{mohammadne}
+
+\begin{document}
+\maketitle
+
+\input{resume/summary.tex}
+
+\input{resume/experience.tex}
+
+\section{Languages}
+
+\cvitemwithcomment{English}{Proficient}{}
+\cvitemwithcomment{Persian}{Native}{}
+
+\section{Skills}
+
+\cvdoubleitem{\color{orange} Programming Languages}{C, Go, Python3, Rust, Scala, Java, Erlang, Javascript, PHP}{\color{orange} Distributions}{Archlinux, Ubuntu}
+\cvdoubleitem{\color{orange} Containers}{Docker, Podman, Kubernetes}{\color{orange} Frameworks \& Libraries}{%
+  \httpslink[GoFiber]{github.com/gofiber},
+  \httpslink[gorm]{github.com/go-gorm/gorm},
+  \httpslink[temporal.io]{temporal.io},
+  \httpslink[viper]{github.com/spf13/viper/},
+  React, Angular, NumPy, Scikit, Panads, Airflow, \httpslink[GLib]{docs.gtk.org/glib/}
+}
+\cvdoubleitem{\color{orange} SDN Controllers}{Ryu, ONOS, OpenDaylight}{\color{orange} Databases \& Analytics Engines}{Postgres, MongoDB, Cassandra, Spark}
+
+\input{resume/open-source.tex}
+
+\input{resume/education.tex}
+
+\input{resume/research.tex}
+
+\input{resume/honors.tex}
+
+\input{resume/extracurricular.tex}
+
+\emptysection{}\closesection{}
+\vfill
+\textit{Mohammad Nasr}
+\linebreak
+\textbf{Mohammad Nasr}\hfil\today
+
+\end{document}

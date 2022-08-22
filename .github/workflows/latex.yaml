@@ -21,6 +21,6 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: main.pdf
+          files: mohammad-nasr.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
